@@ -10,11 +10,11 @@ A python 3.6 interpreter is required.
 * matplotlib>=3.1.0"
 
 Open3D>=0.8.0.0 has to be currently compiled from source. Therefore, we provide a compiled version for 
-[Ubuntu 18.04.3](https://nextcloud.mirevi.medien.hs-duesseldorf.de/index.php/s/bw8kATaLcieNE9q) and Windows.
+[Ubuntu 18.04.3](https://nextcloud.mirevi.medien.hs-duesseldorf.de/index.php/s/bw8kATaLcieNE9q).
 
 ## Installation
 
-Tested on Ubuntu 18.04.3 and Windows 10. 
+Tested on Ubuntu 18.04.3. 
 
 ### Ubuntu
 
