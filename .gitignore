@@ -131,3 +131,7 @@ dmypy.json
 __pycache__/
 
 o3d_0800_ubuntu_18043/
+o3d_0800_win_10/
+
+o3d_0800_ubuntu_18043.zip
+o3d_0800_win_10.zip
