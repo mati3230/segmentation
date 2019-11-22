@@ -4,13 +4,6 @@ Custom gym environment for the segmentation of point clouds with reinforcement l
 The project was developed in context of the [smart segmentation](https://github.com/mati3230/smartsegmentation) project. The necessary point clouds can be created with the [point cloud data generator](https://github.com/mati3230/pc_data_generator).
 A point cloud is segmented by the region growing algorithm. An action consist of 6 parameters. The parameters are: 
 
-* Seed Point X: X coordinate of the seed point in the point cloud.
-* Seed Point Y: Y coordinate of the seed point in the point cloud.
-* Seed Point Z: Z coordinate of the seed point in the point cloud.
-* K: Number of neighbours to grow a region.
-* Angle Threshold: Threshold for the angle resulting from the dot product of the normal of the seed point and a region candidate point. Candidate point with a lower angle than this threshold will be added to the region.
-* Curvature Threshold: If the curvature of a point in the region is smaller than this threshold, it will be considered as seed point.
-
 | Parameter | Description | Original Range |
 | - | - | - |
 | Seed Point X | X coordinate of the seed point in the point cloud. | [-inf, inf] |
@@ -20,7 +13,7 @@ A point cloud is segmented by the region growing algorithm. An action consist of
 | Angle Threshold | Threshold for the angle resulting from the dot product of the normal of the seed point and a region candidate point. Candidate point with a lower angle than this threshold will be added to the region. | [10°, 67,5°] |
 | Curvature Threshold | If the curvature of a point in the region is smaller than this threshold, it will be considered as seed point. | [0.025, 0.3] |
 
-All action parameters are of type float. For each parameter, the environment expects values with a range of [-1,1]. This values will be mapped ranges that are specified in the table above.  
+All action parameters are of float type. For each parameter, the environment expects values with a range of [-1,1]. This values will be mapped to the original ranges that are specified in the table above. Example: Given a point cloud that has spatial points (x, y, z) in the range (+-3, +-2, +-1) and an action (1, -1, 1, 1, -1 , 1). The corresponding input for segmentation which is calculated by the environment would be (3, -2, 1, 30, 10°, 0.3).  
 Currently, the state of the environment is a point cloud or a voxel grid which can be specified in the Parameters section with the option *point_mode*. 
 
 ## Requirements
