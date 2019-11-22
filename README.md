@@ -57,6 +57,7 @@ The code is tested on Windows 10.
 The following code listing can be used to integrate the environment in your project. To apply actions, the standard [gym interface](http://gym.openai.com/docs/) can be used (e.g. *obs, reward, done, info = env.step(action)*). 
 
 *import segmentation*
+
 *import gym*
 
 *...*
