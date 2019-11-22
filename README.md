@@ -1,6 +1,8 @@
 # Segmentation Environment
 
-Custom gym environment for the segmentation of point clouds with reinforcement learning. A point cloud is segmented by the region growing algorithm. An action consist of 6 parameters. The parameters are: 
+Custom gym environment for the segmentation of point clouds with reinforcement learning. 
+The project was developed in context of the [smart segmentation](https://github.com/mati3230/smartsegmentation) project. 
+A point cloud is segmented by the region growing algorithm. An action consist of 6 parameters. The parameters are: 
 
 * Seed Point X: X coordinate of the seed point in the point cloud.
 * Seed Point Y: Y coordinate of the seed point in the point cloud.
