@@ -22,6 +22,7 @@ A python 3.6.8 interpreter is required. All requirements will be installed in th
 * open3d>=0.8.0.0
 * numpy>=1.14.5
 * matplotlib>=3.1.0"
+* Point cloud scene which have the structure of the point clouds from the [point cloud data generator](https://github.com/mati3230/pc_data_generator)
 
 ## Installation
 
@@ -70,7 +71,7 @@ The following code listing can be used to integrate the environment in your proj
 
 | Parameter | Description | Type | Default |
 | --- | --- | --- | --- |
-| objs_dir | Location of the 'PointcloudScenes' directory where the point clouds are stored as csv file. The columns of the point cloud should be as follows: [x y z nx ny nz s], where *s* is a segment number. Moreover, the first 6 segments should be wall objects. An example of some point clouds can be found in the PointcloudScenes of the [smartsegmentation](https://github.com/mati3230/smartsegmentation) project. | str | "../point_cloud_env/objects" |
+| objs_dir | Location of the directory where the 'PointcloudScenes' folder is located which consists of the point clouds that are stored as csv file. The columns of the point cloud should be as follows: [x y z nx ny nz s], where *s* is a segment number. Moreover, the first 6 segments should be wall objects. An example of some point clouds can be found in the PointcloudScenes of the [smartsegmentation](https://github.com/mati3230/smartsegmentation) project. The point clouds can be created with the [point cloud data generator](https://github.com/mati3230/pc_data_generator) | str | "../point_cloud_env/objects" |
 | sample_size | How many points should be sampled from the point cloud as observation for the agent. | int | 1024 |
 | wall_sample_size | How many points of the sampled point cloud should be points of the wall in percent. | float | 0.3 |
 | unlabelled_punishment | Factor to gain or dampen the punishment of unlabelled points. | float | 1.0 |
