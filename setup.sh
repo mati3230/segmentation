@@ -6,4 +6,10 @@ unzip o3d_0800_ubuntu_18043.zip -d o3d_0800_ubuntu_18043
 cd o3d_0800_ubuntu_18043
 pip install .
 cd ..
+
+git clone https://github.com/mati3230/pyntcloud.git
+cd pyntcloud
+pip install -e .
+cd ..
+
 pip install -e .
