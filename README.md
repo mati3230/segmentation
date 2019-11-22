@@ -9,8 +9,18 @@ A point cloud is segmented by the region growing algorithm. An action consist of
 * Seed Point Z: Z coordinate of the seed point in the point cloud.
 * K: Number of neighbours to grow a region.
 * Angle Threshold: Threshold for the angle resulting from the dot product of the normal of the seed point and a region candidate point. Candidate point with a lower angle than this threshold will be added to the region.
-* Curvature Threshold: If the curvature of a point in the region is smaller than this threshold, it will be considered as seed point. 
+* Curvature Threshold: If the curvature of a point in the region is smaller than this threshold, it will be considered as seed point.
 
+| Parameter | Description | Original Range |
+| - | - | - |
+| Seed Point X | X coordinate of the seed point in the point cloud. | [-inf, inf] |
+| Seed Point Y | Y coordinate of the seed point in the point cloud. | [-inf, inf] |
+| Seed Point Z | Z coordinate of the seed point in the point cloud. | [-inf, inf] |
+| K | Number of neighbours to grow a region. | [10, 30] |
+| Angle Threshold | Threshold for the angle resulting from the dot product of the normal of the seed point and a region candidate point. Candidate point with a lower angle than this threshold will be added to the region. | [10°, 67,5°] |
+| Curvature Threshold | If the curvature of a point in the region is smaller than this threshold, it will be considered as seed point. | [0.025, 0.3] |
+
+All action parameters are of type float. For each parameter, the environment expects values with a range of [-1,1]. This values will be mapped ranges that are specified in the table above.  
 Currently, the state of the environment is a point cloud or a voxel grid which can be specified in the Parameters section with the option *point_mode*. 
 
 ## Requirements
