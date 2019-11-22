@@ -52,6 +52,17 @@ The code is tested on Windows 10.
 6. Open a terminal (cmd, Anaconda Prompt) with your Python interpreter, navigate to the *segmentation* directory and install the contents in the *o3d_0800_win_10* folder with: *pip install ./o3d_0800_win_10*
 7. Type *pip install -e ./pyntcloud* In your python terminal
 
+## Usage
+
+The following code listing can be used to integrate the environment in your project. To apply actions, the standard [gym interface](http://gym.openai.com/docs/) can be used (e.g. *obs, reward, done, info = env.step(action)*). 
+
+*import segmentation*
+*import gym*
+
+*...*
+
+*env = gym.make("SegmentationEnv-v0")*
+
 ## Parameters
 
 | Parameter | Description | Type | Default |
