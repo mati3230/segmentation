@@ -91,3 +91,7 @@ The following code listing can be used to integrate the environment in your proj
 | single_scenes | If 'True', the segmentation of one scene counts as an episode. If 'False', the segmentation of all scenes account as one episode. | bool | False |
 | early_diff | If 'True', the segment difference will be applied after more segmentation steps are applied than objects in the scene. If 'False', the segment difference will be applied at the end of hte episode. | bool | False |
 | wall_weight | The weight of the wall objects in the reward calculation. | float | 0.5 |
+
+## Acknowledgements
+
+This project is sponsored by: German Federal Ministry of Education and Research (BMBF) under the project number 13FH022IX6. Project name: Interactive body-near production technology 4.0 (German: Interaktive körpernahe Produktionstechnik 4.0 (iKPT4.0))
